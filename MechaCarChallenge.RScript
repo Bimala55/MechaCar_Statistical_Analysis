@@ -11,3 +11,14 @@
 > summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=Mecha_table)) 
 
 
+#Deliverable 2
+
+#Read file
+> Susp_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+#create summary table with multiple columns
+> summarize_Susp <- Susp_table %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),Sd=sd(PSI))
+
+#create groupby table with multiple columns
+> Susp_group <- Susp_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),Sd=sd(PSI))
+
