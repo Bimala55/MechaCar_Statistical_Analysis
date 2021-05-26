@@ -1,10 +1,13 @@
-library(dplyr)
+#load package
+>library(dplyr)
+
+#Read file
 > Mecha_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 
+#generate multiple linear regression model
+> lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=Mecha_table) 
 
-
-> lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=Mecha_table) #generate multiple linear regression model
-
-> summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=Mecha_table)) #generate summary statistics
+#generate summary statistics
+> summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=Mecha_table)) 
 
 
