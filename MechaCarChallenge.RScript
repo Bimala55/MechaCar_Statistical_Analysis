@@ -22,3 +22,18 @@
 #create groupby table with multiple columns
 > Susp_group <- Susp_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),Sd=sd(PSI))
 
+
+#Deliverable 3
+
+#Perform a t-test
+> t.test(Susp_table$PSI, mu = 1500)
+
+#for Lot 1
+> t.test(subset(Susp_table,Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
+
+#for Lot 2
+> t.test(subset(Susp_table,Manufacturing_Lot == "Lot2")$PSI, mu = 1500)
+
+#for Lot 3
+> t.test(subset(Susp_table,Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
+
