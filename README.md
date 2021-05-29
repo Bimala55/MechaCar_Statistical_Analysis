@@ -5,10 +5,12 @@
     Vechicle_weight, Spoiler_angle, and AWD variables provided a non-random amount of variance to the mpg values in the dataset.
  
 - Is the slope of the linear model considered to be zero? Why or why not?
-  The slope of this linear model is not Zero becasue p-value of this model is 5.35e-11 which is smaller than 0.05.
+  
+   The slope of this linear model is not Zero becasue p-value of this model is 5.35e-11 which is smaller than 0.05.
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-  Yes, this linear model predicts the mpg of MechaCar prototypes effectively because the r-squared value of this model is 0.7149 which means approx. 71% of mpg prediction is        determined by this model.
+ 
+   Yes, this linear model predicts the mpg of MechaCar prototypes effectively because the r-squared value of this model is 0.7149 which means approx. 71% of mpg prediction is        determined by this model.
  
  The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight,    spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. By, using R we design a linear model that predicts the mpg of MechaCar prototypes.
   
@@ -29,7 +31,8 @@
    )
    
    ## T-Tests on Suspension Coils
-   Lot1 and lot2 have similar to the sample estimates mean 1500 however lot3 is less than the sample estimates mean. All t-tests can be seen below:
+   Lot1 and lot2 have similar to the sample estimates mean 1500 however lot3 is less than the sample estimates mean. 
+   All t-tests can be seen below:
 
    
    ![first image](/Resources/image7.PNG
@@ -44,9 +47,5 @@
    
    ## Study Design: MechaCar vs Competition
    
-   we can use the following matrics 
-   cost:- Dependent variable,
-   fuel efficiency:-Independent Variable,
-   horse power:-Independent Variable,
-   maintenance cost:-Independent Variable,
-   safety rating:-Independent Variable
+   In my view I think people are interested in when buying a car is how much safety rating and horsepower the car has. We can use our test to see if our MechaCar is different from the competition. The null hypothesis is that MechaCar is not different from the competition and the alternative hypothesis is the opposite. t-test to compare our dataset with the competitors. The t-test has already been used for this current analysis and provided the predictions needed to take the next steps for improvement. I would need safety rating and horsepower data from 50 individual cars to create a sample size of data for each car in the class type.
+   
